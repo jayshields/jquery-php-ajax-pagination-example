@@ -2,7 +2,7 @@
 
 Example code for creating a paginated result set using PHP and AJAX. Specifically makes use of jQuery, Silex and Doctrine.
 
-## Prerequisities
+## Prerequisites
 
 - Apache >= 2.2
 - PHP >= 5.2
