@@ -4,9 +4,9 @@ Example code for creating a paginated result set using PHP and AJAX. Specificall
 
 ## Prerequisities
 
-# Apache >= 2.2
-# PHP >= 5.2
-# Your favourite database software
+- Apache >= 2.2
+- PHP >= 5.2
+- Your favourite database software
 
 ## Setup
 
