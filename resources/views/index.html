@@ -6,7 +6,6 @@
 
     <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
     <script type="text/javascript">
-      var data_source = 'data.php';
       var rows_per_page = 3;
       var total_rows;
 
@@ -38,7 +37,7 @@
       function initPageNumbers()
       {
         //Get total rows number
-        $.get(data_source, function(data){
+        $.get('data/countrows', function(data){
           total_rows = parseInt(data.total_rows);
 
           //Loop through every available page and output a page link
@@ -57,10 +56,10 @@
         $('#rows').html('');
 
         //Get subset of data
-        $.get(data_source, {page_num: page_num, rows_per_page: rows_per_page}, function(data){
+        $.get('data/page/'+page_num+'/'+rows_per_page, function(data){
           //Loop through each row and output the data
           $(data).each(function(){
-                  $('#rows').append('<li>'+this.name+'</li>');
+            $('#rows').append('<li>'+this.name+'</li>');
           });
         });
       }
