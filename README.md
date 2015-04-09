@@ -1,6 +1,6 @@
 # jquery-php-ajax-pagination-example
 
-Example code for creating a paginated result set using PHP and AJAX. Specifically makes use of jQuery, Silex and Doctrine.
+Example code for creating a paginated result set using PHP and AJAX. Specifically makes use of jQuery, Silex and PDO.
 
 ## Prerequisites
 
